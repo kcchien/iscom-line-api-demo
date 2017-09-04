@@ -1,3 +1,6 @@
+/**
+ * 使用Line Notify 服務傳送訊息
+ */
 module.exports = function (context, req) {
 
     let axios = require('axios');
