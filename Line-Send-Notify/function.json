@@ -1,0 +1,34 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "documentDB",
+      "name": "outputDocument",
+      "databaseName": "line-api",
+      "collectionName": "LineNotifyLog",
+      "createIfNotExists": true,
+      "connection": "my_DOCUMENTDB",
+      "direction": "out"
+    },
+    {
+      "type": "documentDB",
+      "name": "inputDocument",
+      "databaseName": "line-api",
+      "collectionName": "Line",
+      "sqlQuery": "SELECT top 1 * from c where c.name = {name}",
+      "connection": "my_DOCUMENTDB",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}
