@@ -135,14 +135,11 @@ module.exports = function (context, req) {
                         <div class="col-md-4"></div>
                         <div class="col-md-4">
                             <div align="center">
-                                <h1>King Steel</h1>
+                                <h1>LINE Notify</h1>
                                 <h3>LINE Notify 通知服務登錄</h3>
                                 <a href="${hyperlink}" class="btn btn-primary btn-lg btn-block" role="button" target="_blank">點擊登錄</a>
                                 <br>
                                 <p class="text-center">請依下圖所示，點選<mark>透過1對1聊天接收LINE Notify的通知</mark>後，再點擊畫面最下方的<mark>同意並連動</mark>，完成登錄</p>
-                                <img src="${DescriptionImageUrl}" width="479" height="800" alt="hint" class="img-responsive img-rounded img-thumbnail">
-                                <p class="text-center">本服務為鉅鋼機械行政提供</p>
-                                <p class="text-center">King Steel Machinery Co., Ltd.</p>
                             </div>
                         </div>
                         <div class="col-md-4"></div>
