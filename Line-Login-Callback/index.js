@@ -29,7 +29,7 @@ module.exports = function (context, req) {
    * my_DOCUMENTDB:AccountEndpoint=https://kingsteel.documents.azure.com:443/;AccountKey={建立完cosmos DB後,會有一串Account Key};
    */
   const line_login_client_id = process.env.LineLoginClientID;
-  const ine_login_client_secret = process.env.LineLoginClientSecret;
+  const line_login_client_secret = process.env.LineLoginClientSecret;
   const line_login_redirect_url = process.env.LineLoginRedirectUrl || req.originalUrl.split('?')[0];
   const line_notify_redirect_url = process.env.LineNotifyRedirectUrl;
   
@@ -57,8 +57,8 @@ module.exports = function (context, req) {
         grant_type: 'authorization_code',
         code: code,
         redirect_uri: line_login_redirect_url,
-        client_id: ine_login_client_id,
-        client_secret:ine_login_client_secret
+        client_id: line_login_client_id,
+        client_secret:line_login_client_secret
     };
     
     // 記錄名字, _id
