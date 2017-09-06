@@ -85,7 +85,7 @@ module.exports = function (context, req) {
                     context.log('Send message', response.data);
                     context.res = {
                         status: 200,
-                        body: `<h2>${state}你好，你已成功加入LINE通知功能, 本視窗可以關閉, 謝謝！</h2>`
+                        body: `${state}你好，你已成功加入LINE通知功能, 本視窗可以關閉, 謝謝！`
                     };
                     context.done();
                 });
